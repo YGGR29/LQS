@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Disponibles</title>
+    <link rel="stylesheet" href="../assets/css/participant.css">
+</head>
+<body>
+    <header class="participant-header">
+        <div class="header-content">
+            <h1>Eventos Disponibles</h1>
+            <div class="header-actions">
+                <button id="messagesBtn" class="btn-messages">
+                    <span class="icon">✉️</span> Mensajes
+                </button>
+                <button onclick="logout()" class="btn-logout">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="participant-main">
+        <section class="events-section">
+            <div class="search-filter">
+                <input type="text" id="eventSearch" placeholder="Buscar eventos...">
+                <select id="categoryFilter">
+                    <option value="">Todas las categorías</option>
+                    <option value="conferencia">Conferencia</option>
+                    <option value="taller">Taller</option>
+                    <option value="social">Evento Social</option>
+                    <option value="deportivo">Deportivo</option>
+                </select>
+            </div>
+
+            <div class="events-grid" id="eventsGrid">
+                <!-- Eventos se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/participant.js"></script>
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>

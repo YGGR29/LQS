@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería</title>
+    <link rel="stylesheet" href="../assets/css/messaging.css">
+</head>
+<body>
+    <header class="messaging-header">
+        <div class="header-content">
+            <h1>Mensajería</h1>
+            <div class="header-actions">
+                <button onclick="window.location.href='new_message.html'" class="btn-primary">
+                    ✏️ Nuevo Mensaje
+                </button>
+                <button onclick="window.history.back()" class="btn-secondary">
+                    ← Volver
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="messaging-main">
+        <aside class="conversation-list">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar conversaciones...">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="conversations" id="conversationList">
+                <!-- Conversaciones se cargarán aquí -->
+            </div>
+        </aside>
+
+        <section class="message-view">
+            <div class="message-header">
+                <h2 id="currentConversation">Selecciona una conversación</h2>
+            </div>
+            <div class="messages-container" id="messagesContainer">
+                <div class="no-conversation">
+                    <p>Selecciona una conversación para ver los mensajes</p>
+                </div>
+            </div>
+            <div class="message-input-container">
+                <textarea id="messageInput" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button id="sendMessageBtn" class="btn-primary">Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/messaging.js"></script>
+</body>
+</html>

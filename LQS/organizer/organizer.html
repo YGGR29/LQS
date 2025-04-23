@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Organizador</title>
+    <link rel="stylesheet" href="../assets/css/organizer.css">
+</head>
+<body>
+    <header class="organizer-header">
+        <div class="header-content">
+            <h1>Panel del Organizador</h1>
+            <div class="header-actions">
+                <button id="messagesBtn" class="btn-messages">
+                    <span class="icon">✉️</span> Mensajes
+                </button>
+                <button id="createEventBtn" class="btn-primary">
+                    + Crear Evento
+                </button>
+                <button onclick="logout()" class="btn-logout">
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="organizer-main">
+        <section class="events-section">
+            <h2>Tus Eventos</h2>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Eventos se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/organizer.js"></script>
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>
